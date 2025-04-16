@@ -10,6 +10,7 @@ def merge_excels(path_list, path_out, sheet='Metadata'):
     """
     dataframes = []
     for path in path_list:
+        print (path)
         df = pd.read_excel(path)
         df['ARCHIVO_ORIGEN'] = path  # Agrega el nombre del archivo como referencia
         dataframes.append(df)
