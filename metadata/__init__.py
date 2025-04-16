@@ -1,1 +1,1 @@
-from .manage_metada import MetadataManager
+from .manage_metadata import MetadataManager

@@ -2,9 +2,9 @@ import os
 from time import sleep
 from utils import Colors, clear_screen, get_option
 from controllers import ImageController
-from excel_merge import excel_merge
-from excel_reader import excel_reader_to_dict
-from manager_metadata import MetadataManager
+from metadata import MetadataManager
+from files import excel_merge as excel_merge
+from files import excel_reader as excel_reader
 
 
 image_controller = ImageController()
