@@ -2,6 +2,9 @@ import os
 from time import sleep
 from utils import Colors, clear_screen, get_option
 from controllers import ImageController
+from excel_merge import excel_merge
+from excel_reader import excel_reader_to_dict
+from manager_metadata import MetadataManager
 
 
 image_controller = ImageController()
@@ -71,4 +74,12 @@ def menu():
 
 
 if __name__ == "__main__":
+
+    files = [
+    os.path.join("dataset", "COVID.metadata"),
+    os.path.join("dataset", "Lung_Opacity.metadata"),
+    os.path.join("dataset", "Normal.metadata"),
+    os.path.join("dataset", "Viral_Pneumonia.metadata")
+    ]
+    
     menu()
